@@ -1,7 +1,7 @@
 // Код JavaScript для проигрывания аудио и анимации кнопки
 var audioButton = document.getElementById('audioButton');
-var audio = new Audio('toi.mp3');
-var isPlaying = false;
+var audio = document.getElementById('audio');
+var isPlaying = true;
 /*audio.play(); // Проигрываем аудио при загрузке сайта
 audioButton.classList.add('playing'); */ // 
 audioButton.addEventListener('click', function () {
