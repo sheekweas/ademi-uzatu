@@ -195,12 +195,15 @@ body {
     margin-bottom: 20px;
 }
 
+
 #dressCodeSlider img {
-    width: 600px;
-    height: 400px;
+    /* width: 500px; */
+    width: 100%;
+    height: 500px;
     object-fit: cover;
     margin: 0 10px;
 }
+
 
 /* 4 секция */
 #section4 {
@@ -292,12 +295,6 @@ body {
     #guestForm {
         max-width: 300px;
     }
-    #dressCodeSlider img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        margin: 0 10px;
-}
 }
 
 /* Медиа-запрос для планшетов */
