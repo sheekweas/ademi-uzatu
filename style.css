@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400&display=swap');
+
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 1 секция */
+#section1 {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.audio-button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.audio-button::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #000000;
+    transition: transform 0.3s ease;
+}
+
+.audio-button.playing::before {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+/* Анимация текста */
+#animatedText {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 2 секция */
+/* #section2 {
+        text-align: center;
+        background-color: #fff;
+        padding: 50px;
+    }
+
+    #weddingInfo {
+        margin-bottom: 20px;
+    }
+
+    #countdown {
+        font-size: 24px;
+    } */
+
+/* Стилистика для секции 2 */
+#section2 {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+#section2 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#section2 h2.name {
+    font-size: 38px;
+}
+
+#section2 p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#section2 h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#section2 #weddingInfo {
+    margin-bottom: 20px;
+}
+
+#section2 #countdown {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#section2 #location {
+    font-size: 16px;
+    color: #999999;
+}
+
+/* 3 секция */
+#section3 {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+#dressCodeSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dressCodeSlider img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+/* 4 секция */
+#section4 {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+}
+
+#guestForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#guestForm input[type="text"],
+#guestForm input[type="number"],
+#guestForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#guestForm button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Адаптивность */
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    #section1 {
+        padding: 20px;
+    }
+
+    #prevBtn,
+    #nextBtn {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .audio-button {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .audio-button::before {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 15px solid #000000;
+    }
+
+    #animatedText {
+        font-size: 14px;
+    }
+
+    #section2 {
+        padding: 20px;
+    }
+
+    #section2 h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #section2 h2.name {
+        font-size: 32px;
+    }
+
+    #section2 p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    #section2 h5 {
+        font-size: 16px;
+    }
+
+    #section4 {
+        padding: 0;
+    }
+
+    #guestForm {
+        max-width: 300px;
+    }
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #carousel {
+        padding: 30px;
+    }
+
+    #prevBtn,
+    #nextBtn {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+    }
+
+    .audio-button {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    .audio-button::before {
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 20px solid #000000;
+    }
+
+    #animatedText {
+        font-size: 16px;
+    }
+
+    #section2 {
+        padding: 30px;
+    }
+
+    #section2 h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    #section2 h2.name {
+        font-size: 36px;
+    }
+
+    #section2 p {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    #section2 h5 {
+        font-size: 20px;
+    }
+}
+
+/* Медиа-запрос для настольных компьютеров */
+/*  */

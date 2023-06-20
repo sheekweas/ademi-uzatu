@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+
+    <section id="section1">
+        <div>
+            <!-- <div id="carousel">
+                <div class="slide-container">
+                    <img class="slide"
+                        src="img1.jpeg"
+                        alt="Image 1">
+                    <img class="slide"
+                        src="img2.jpeg"
+                        alt="Image 2">
+                    <img class="slide"
+                        src="img3.jpeg"
+                        alt="Image 3">
+                    <img class="slide"
+                        src="img4.jpeg"
+                        alt="Image 4">
+                </div>
+                <div id="prevBtn">&larr;</div>
+                <div id="nextBtn">&rarr;</div>
+            </div> -->
+            <img src="img2.jpeg"
+                alt="Background Image" style="width: 600px; height: auto; margin: 0 auto;">
+            <button id="audioButton" class="audio-button"></button>
+        </div>
+        <!-- <div id="animatedText"> ҰЗАТУ </div> -->
+    </section>
+
+    <section id="section2">
+        <h2>ҚҰРМЕТТІ АҒАЙЫН-ТУЫС,БАУЫРЛАР,НАҒАШЫЛАР,ҚҰДА-ЖЕКЖАТ,ӘПКЕ-ЖЕЗДЕЛЕР,ЖИЕН-БӨЛЕЛЕР,ҚҰРДАСТАР,ӘРІПТЕСТЕР,КӨРШІЛЕР
+        </h2>
+        <p>Сіздерді аяулы қызымыз</p>
+        <h2 class="name">Әдемінің</h2>
+        <p>ҰЗАТУ ТОЙЫНА АРНАЛҒАН САЛТАНАТТЫ АҚ ДАСТАРХАНЫМЫЗДЫҢ ҚАДІРЛІ ҚОНАҒЫ БОЛУҒА ШАҚЫРАМЫЗ</p>
+        <div id="weddingInfo">
+            <div id="countdown"></div>
+            <div id="location">Астана қаласы, Сығанақ 38, "Plazzo Di Astana"</div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h2>Дресс-код</h2>
+        <p>Қазақы нақыштағы киім үлгісі</p>
+        <div id="dressCodeSlider">
+            <button id="prevButton">←</button>
+            <img id="dressCodeImage"
+                src="https://zhanaqorgan-tynysy.kz/uploads/posts/2020-04/1585904237_kim.jpg"
+                alt="Dress Code">
+            <button id="nextButton">→</button>
+        </div>
+    </section>
+
+    <section id="section4">
+        <h2>Қонақтар формасы</h2>
+        <form id="guestForm">
+            <label for="attend">Біздің тойымызға келесіз бе?</label>
+            <select id="attend" name="attend" required>
+                <option value="yes">Иә</option>
+                <option value="yes">Әрине</option>
+                <option value="yes">Конечно</option>
+            </select>
+
+            <label for="guestCount">Отбасыңыздан қанша адам келеді?</label>
+            <div>
+                <!-- <button id="decrementButton" type="button">-</button> -->
+                <input id="guestCount" type="number" name="guestCount" value="2" min="1" required>
+                <!-- <button id="incrementButton" type="button">+</button> -->
+            </div>
+
+            <label for="guestNames">Тойға келетін адамдарды жазыңыз</label>
+            <input id="guestNames" type="text" name="guestNames" placeholder="Ержан Қарлығаш" required>
+
+            <button type="submit">Жіберу</button>
+        </form>
+    </section>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
