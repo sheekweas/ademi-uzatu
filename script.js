@@ -2,8 +2,9 @@
 var audioButton = document.getElementById('audioButton');
 var audio = new Audio('toi.mp3');
 var isPlaying = false;
-
-audioButton.addEventListener('click', function () {
+audio.play(); // Проигрываем аудио при загрузке сайта
+audioButton.classList.add('playing'); // 
+/*audioButton.addEventListener('click', function () {
   if (isPlaying) {
     audio.pause();
     audioButton.classList.remove('playing');
@@ -13,7 +14,7 @@ audioButton.addEventListener('click', function () {
   }
 
   isPlaying = !isPlaying;
-});
+});*/
 
 // Код JavaScript для анимации текста
 var animatedText = document.getElementById('animatedText');
