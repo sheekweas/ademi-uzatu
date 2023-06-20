@@ -2,9 +2,14 @@
 var audioButton = document.getElementById('audioButton');
 var audio = document.getElementById('audio');
 var isPlaying = true;
-/*audio.play(); // Проигрываем аудио при загрузке сайта
-audioButton.classList.add('playing'); */ // 
-audioButton.addEventListener('click', function () {
+
+audioButton.addEventListener('click', toggleAudio);
+
+document.addEventListener('DOMContentLoaded', function() {
+  audio.play();
+});
+
+function toggleAudio() {
   if (isPlaying) {
     audio.pause();
     audioButton.classList.remove('playing');
@@ -14,7 +19,7 @@ audioButton.addEventListener('click', function () {
   }
 
   isPlaying = !isPlaying;
-});
+}
 
 // Код JavaScript для анимации текста
 var animatedText = document.getElementById('animatedText');
