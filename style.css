@@ -11,6 +11,18 @@ footer p {
     font-size: 10px;
     font-weight: 400;
 }
+
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
 /* Общие стили */
 body {
     margin: 0;
@@ -184,8 +196,8 @@ body {
 }
 
 #dressCodeSlider img {
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     object-fit: cover;
     margin: 0 10px;
 }
@@ -280,6 +292,12 @@ body {
     #guestForm {
         max-width: 300px;
     }
+    #dressCodeSlider img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0 10px;
+}
 }
 
 /* Медиа-запрос для планшетов */
