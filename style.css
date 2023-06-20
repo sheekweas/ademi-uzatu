@@ -293,8 +293,8 @@ body {
         max-width: 300px;
     }
     #dressCodeSlider img {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         object-fit: cover;
         margin: 0 10px;
 }
