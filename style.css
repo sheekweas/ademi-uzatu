@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400&display=swap');
 
+footer {
+    background: rgb(246, 246, 246) ;
+    padding: 50px 0;
+    display: block;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+    font-weight: 400;
+}
 /* Общие стили */
 body {
     margin: 0;
